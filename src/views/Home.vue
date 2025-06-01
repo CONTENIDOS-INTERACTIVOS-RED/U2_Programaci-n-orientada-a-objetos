@@ -22,7 +22,7 @@
             .content-wrapper.px-lg-4.pt-lg-4.px-xxl-5.py-xxl-5.text-start
               p.home-main-title UNIDAD {{ `${globalData.numeroUnidad}` }}
               h1.home-title.mb-4 {{ globalData.tituloUnidad }}
-              p.descripcion.mb-4 La unidad presenta los fundamentos de la Programación Orientada a Objetos (POO), explicando conceptos clave como clases, objetos, encapsulación, abstracción e interacción entre objetos. Se destacan los beneficios de modularidad, reutilización de código y simplificación del desarrollo de software. Se estudian mecanismos como constructores, métodos get/set, diagramas UML, interfaces, asociaciones, acoplamiento, cohesión, composición y agregación. La unidad ofrece ejemplos prácticos y recursos audiovisuales para apoyar el aprendizaje. Dominar estos conceptos es esencial para diseñar sistemas robustos, escalables y mantenibles en ingeniería de software.
+              p.descripcion.mb-4 La unidad 2 aborda los pilares de la Programación Orientada a Objetos: herencia y polimorfismo. Explica cómo las jerarquías de clases permiten la reutilización de código y cómo la sobrecarga y sobrescritura de métodos posibilitan comportamientos flexibles. Se destacan el uso de interfaces, clases abstractas y el principio de sustitución de Liskov para un diseño mantenible. Se presentan ejemplos prácticos en colecciones y patrones MVC. Se incluyen recursos como libros, videos y herramientas de programación, promoviendo un aprendizaje aplicado. El dominio de estos conceptos es clave para el desarrollo profesional en software.
               .button-container.mt-auto
                 router-link.btn-iniciar.w-100.w-md-auto(:to="{ name: 'introduccion' }")
                   .iniciar-btn-container.w-100.w-md-auto

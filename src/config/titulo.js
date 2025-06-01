@@ -1,1 +1,1 @@
-module.exports = 'Fundamentos de programación orientada a objetos'
+module.exports = 'Herencia y polimorfismo'

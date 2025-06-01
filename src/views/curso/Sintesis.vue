@@ -2,7 +2,7 @@
   .curso-main-container.creditos-vista
     BannerInterno(subTitulo="SÍNTESIS")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-      p(data-aos="fade-up").mb-5 Se inicia abordando los conceptos de clases y objetos, que son fundamentales en la programación orientada a objetos (POO). 
+      p(data-aos="fade-up").mb-5 En esta unidad, se explora en detalle dos de los pilares fundamentales de la programación orientada a objetos: la herencia y el polimorfismo.
 
       .row.justify-content-center
         .col-lg-12.mb-5

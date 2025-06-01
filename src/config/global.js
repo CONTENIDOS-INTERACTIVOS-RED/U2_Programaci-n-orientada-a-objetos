@@ -1,7 +1,7 @@
 export default {
   global: {
-    numeroUnidad: '1',
-    tituloUnidad: 'Fundamentos de programación orientada a objetos',
+    numeroUnidad: '2',
+    tituloUnidad: 'Herencia y polimorfismo',
   },
   menuPrincipal: {
     menu: [
@@ -15,22 +15,32 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Fundamentos de programación orientada a objetos',
+        titulo: 'Herencia y polimorfismo',
         desarrolloContenidos: true,
         subMenu: [
           {
             icono: 'far fa-file-alt',
             numero: '1.1',
-            titulo: 'Historia de los lenguajes de programación',
+            titulo: 'Jerarquías de herencia',
             hash: 't_1_1',
           },
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.2',
-            titulo: 'Encapsulación y abstracción	',
-            hash: 't_1_2',
-          },
         ],
+      },
+      {
+        nombreRuta: 'tema2',
+        icono: 'far fa-file-alt',
+        numero: '2',
+        titulo: 'Sobrecarga y sobrescritura de métodos',
+        desarrolloContenidos: true,
+        subMenu: [],
+      },
+      {
+        nombreRuta: 'tema3',
+        icono: 'far fa-file-alt',
+        numero: '3',
+        titulo: 'Diseño basado en polimorfismo',
+        desarrolloContenidos: true,
+        subMenu: [],
       },
       {
         nombreRuta: 'sintesis',
@@ -101,127 +111,104 @@ export default {
   ],
   glosario: [
     {
-      termino: 'Abstracción',
-      significado:
-        'Proceso de identificar los aspectos esenciales de un sistema y representarlos en un modelo simplificado, ignorando los detalles no relevantes.',
-    },
-    {
-      termino: 'Acoplamiento',
-      significado:
-        'Grado de interdependencia entre las clases o módulos de un sistema.',
-    },
-    {
-      termino: 'Agregación',
-      significado:
-        'Tipo de asociación en la que un objeto contiene referencias a otros objetos, pero estos pueden existir independientemente.',
-    },
-    {
-      termino: 'Asociación',
-      significado:
-        'Relación entre clases que describe cómo los objetos de una clase se conectan o interactúan con los objetos de otra clase.',
-    },
-    {
-      termino: 'Atributo',
-      significado:
-        'Variable que representa una propiedad o característica de una clase.',
-    },
-    {
-      termino: 'Clase',
-      significado:
-        'Plantilla o blueprint que define las propiedades y comportamientos comunes de un conjunto de objetos.',
-    },
-    {
       termino: 'Clase abstracta',
       significado:
-        'Clase que no puede ser instanciada directamente y sirve como base para otras clases derivadas.',
+        'Clase que no puede ser instanciada directamente, ha sido diseñada para ser heredada por otras clases. Puede contener métodos abstractos y concretos.',
     },
     {
-      termino: 'Clase concreta',
+      termino: 'Clase base',
       significado:
-        'Clase que puede ser instanciada para crear objetos específicos.',
+        'Clase de la cual se derivan otras clases. También conocida como superclase o clase padre.',
     },
     {
-      termino: 'Cohesión',
+      termino: 'Clase derivada',
       significado:
-        'Grado en que los elementos de una clase están relacionados y trabajan juntos para lograr un único propósito.',
-    },
-    {
-      termino: 'Composición',
-      significado:
-        'Tipo de asociación en la que un objeto contiene otros objetos y es responsable de su ciclo de vida.',
+        'Clase que hereda atributos y métodos de otra clase. También conocida como subclase o clase hija.',
     },
     {
       termino: 'Constructor',
       significado:
-        'Método especial utilizado para inicializar los atributos de un objeto al momento de su creación.',
+        'Método específico que se aplica para inicializar los objetos de una clase. En la herencia, los constructores de la clase base pueden ser invocados desde los constructores de las clases derivadas.',
     },
     {
-      termino: 'Diagrama de clases UML',
+      termino: 'Contrato',
       significado:
-        'Representación visual de la estructura de un sistema, mostrando las clases, sus atributos, métodos y las relaciones entre ellas.',
-    },
-    {
-      termino: 'Encapsulación',
-      significado:
-        'Principio que consiste en ocultar los detalles internos de una clase y exponer solo una interfaz pública para interactuar con ella.',
+        'Conjunto de métodos que deben ser implementados por cualquier clase que quiera cumplir con un determinado comportamiento o interfaz.',
     },
     {
       termino: 'Herencia',
       significado:
-        'Mecanismo que permite a una clase (subclase) heredar las propiedades y comportamientos de otra clase (superclase).',
+        'Mecanismo por el cual una clase hereda los atributos y métodos de otra clase.',
     },
     {
-      termino: 'Instanciación',
-      significado: 'Proceso de crear un objeto a partir de una clase.',
+      termino: 'Herencia múltiple',
+      significado:
+        'Capacidad de una clase de heredar atributos y métodos de varias clases base simultáneamente.',
+    },
+    {
+      termino: 'Herencia simple',
+      significado:
+        'Capacidad de una clase de heredar atributos y métodos de una sola clase base.',
     },
     {
       termino: 'Interfaz',
       significado:
-        'Contrato que define un conjunto de métodos que una clase debe implementar, sin especificar cómo deben ser implementados.',
+        'Tipo abstracto que define un conjunto de métodos que deben ser implementados por cualquier clase que quiera cumplir con su contrato.',
     },
     {
-      termino: 'Mensaje',
+      termino: 'LSP - Principio de sustitución de Liskov',
       significado:
-        'Solicitud enviada a un objeto para que ejecute uno de sus métodos.',
+        'Es un principio del diseño donde se promueve que los objetos de un programa deben ser reemplazables por instancias de sus subtipos, sin alterar la corrección del programa.',
     },
     {
       termino: 'Método',
       significado:
-        'Función o procedimiento que define el comportamiento de una clase.',
+        'Función miembro de una clase que define un comportamiento específico.',
     },
     {
-      termino: 'Modificador de acceso',
+      termino: 'Método abstracto',
       significado:
-        'Palabra clave (public, private, protected) que determina la visibilidad y accesibilidad de los miembros de una clase.',
+        'Método declarado en una clase abstracta o interfaz, pero sin implementación concreta. Las clases derivadas deben proporcionar una implementación para estos métodos.',
     },
     {
-      termino: 'Objeto',
+      termino: 'MVC',
       significado:
-        'Instancia específica de una clase, que tiene sus propios valores para los atributos definidos en la clase.',
+        'Modelo-vista-controlador, un patrón de diseño que separa la lógica de una aplicación en tres componentes interconectados. El polimorfismo es a menudo utilizado en la implementación de los controladores.',
     },
     {
-      termino: 'Parámetro',
+      termino: 'Override',
       significado:
-        'Variable que recibe un valor al momento de llamar a un método.',
+        'Modificador utilizado para indicar que un método está sobrescribiendo un método de la clase base.',
     },
     {
-      termino: 'POO (Programación Orientada a Objetos)',
+      termino: 'POO',
       significado:
-        'Paradigma de programación basado en el concepto de objetos, que encapsulan datos y comportamiento.',
+        'Programación orientada a objetos, un referente de programación basado en el concepto de objetos que encapsulan estado y comportamiento.',
     },
     {
-      termino: 'Propiedad',
+      termino: 'Polimorfismo',
       significado:
-        'Atributo de una clase que tiene métodos get y set asociados para acceder y modificar su valor de manera controlada.',
+        'Capacidad de un objeto para adoptar múltiples formas o comportarse de diferentes maneras según el contexto. Puede ser estático (sobrecarga) o dinámico (sobrescritura).',
     },
     {
-      termino: 'Retorno de método',
-      significado: 'Valor que un método devuelve al finalizar su ejecución.',
-    },
-    {
-      termino: 'UML (Lenguaje Unificado de Modelado)',
+      termino: 'Sobrecarga de métodos',
       significado:
-        'Lenguaje estándar para modelar y visualizar el diseño de sistemas de software orientados a objetos.',
+        'Capacidad de una clase para contener múltiples métodos con el mismo nombre, pero diferentes firmas.',
+    },
+    {
+      termino: 'Sobrescritura de métodos',
+      significado:
+        'Capacidad de una subclase de proporcionar su propia implementación para un método heredado de su superclase.',
+    },
+    {
+      termino: 'Superclase',
+      significado:
+        'Clase de la cual se derivan otras clases. También conocida como clase base o clase padre.',
+    },
+    {
+      termino: 'UML - Lenguaje unificado de modelado',
+      significado:
+        'Lenguaje de modelado visual utilizado para especificar, visualizar, construir y documentar sistemas de software.',
     },
   ],
 }

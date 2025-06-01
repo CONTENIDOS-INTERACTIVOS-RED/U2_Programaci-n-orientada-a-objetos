@@ -118,7 +118,7 @@
                     p.text-bold.mb-3 Principio de SUSTITUCIÓN de LISKOV  
                     p.text-small Para ampliar el concepto de sustitución de Liskov le invitamos a ver el siguiente vídeo.
                   .col-sm-auto
-                    a.download-btn.boton.bg-morado-oscuro.text-white(href="" target='_blank')
+                    a.download-btn.boton.bg-morado-oscuro.text-white(href="https://youtu.be/6eInyxthvdo" target='_blank')
                       span.text-small Ver video
                       i.fas.fa-arrow-right 
 

@@ -7,7 +7,7 @@
     .row.bg-fondo-1.bg-full-width.pt-4.mb-4
       div.px-5
 
-        .row.mb-5
+        .row.mb-4
           .col-12.col-xl-8
             p.mb-4 La herencia y el polimorfismo son dos conceptos fundamentales en la programación orientada a objetos (POO) que permiten crear estructuras de código más flexibles, reutilizables y mantenibles. Estos conceptos se basan en la idea de que los objetos pueden heredar atributos o comportamientos de otros objetos, que pueden ser tratados como instancias de su clase base o superclase.
             .d-flex.bg-verde.p-4.flex-column.flex-md-row.mb-4(data-aos='fade-up')
@@ -18,6 +18,21 @@
           .col-4.d-none.d-xl-block
             img(src='@/assets/curso/unidad/img-4.png', alt='Texto que describa la imagen')
         
+        .row
+          .col-12.col-xl-8.mx-auto
+            .tarjeta.shadow.bg-white.p-3.mb-5
+              .row.justify-content-around.align-items-center
+                .col-3.col-sm-2.px-4
+                  img(src='@/assets/componentes/youtube-icon-circle.svg')
+                .col
+                  .row.justify-content-between.align-items-center
+                    .col.mb-3.mb-sm-0
+                      p.text-bold.mb-3 ¿Qué es la herencia en POO? | Explicación rápida y sencilla con ejemplo.
+                      p.text-small Para conocer un ejemplo práctico de aplicación de herencia le invitamos a ver el siguiente vídeo.
+                    .col-sm-auto
+                      a.download-btn.boton.bg-morado-oscuro.text-white(href="https://youtu.be/13MYvinhzWo" target='_blank')
+                        span.text-small Ver vídeo
+                        i.fas.fa-arrow-right
     .row.mt-n3
       .col-12.col-xl-8.mx-auto
         .tarjeta.shadow.bg-white.p-3.mb-5

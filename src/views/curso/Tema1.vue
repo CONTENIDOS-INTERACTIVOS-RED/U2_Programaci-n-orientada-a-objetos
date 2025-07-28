@@ -1,6 +1,6 @@
 <template lang="pug">
 .curso-main-container.pb-3
-  BannerInterno(:subTitulo="'1. Fundamentos de programación orientada a objetos'")
+  BannerInterno(:subTitulo="'1. Herencia y polimorfismo'")
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.overflow-hidden
     
 

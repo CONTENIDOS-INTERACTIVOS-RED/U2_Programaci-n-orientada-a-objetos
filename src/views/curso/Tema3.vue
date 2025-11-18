@@ -163,7 +163,7 @@
         div.px-5.pb-md-3
           figure
             .video
-              <iframe width="1905" height="732" src="https://www.youtube.com/embed/Yd7vDterctQ" title="3 A.M Coding Session - Chillstep Beats to Keep You Going" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="1905" height="732" src="https://www.youtube.com/embed/5pZiGuMoIws?si=WEEdI-KCVb8ln5UI" title="3 A.M Coding Session - Chillstep Beats to Keep You Going" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       .d-flex.bg-morado-oscuro.bg-full-width.p-4.flex-column.flex-md-row.mb-4(data-aos='fade-up')
         img.me-3(style='width: 90px' src='@/assets/curso/unidad/img-59.svg', alt='Texto descriptivo de la imagen')

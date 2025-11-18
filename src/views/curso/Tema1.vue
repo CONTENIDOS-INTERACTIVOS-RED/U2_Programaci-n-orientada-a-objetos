@@ -65,7 +65,7 @@
     h2 Concepto de herencia simple y múltiple (según el lenguaje).
     .row.mb-4
       .col-12.col-xl-8
-        p.mb-4 La herencia simple se refiere a la capacidad de una clase de heredar atributos y métodos de una sola clase base o superclase. En cambio, a herencia múltiple permite que una clase herede de varias clases base simultáneamente. Aunque la herencia múltiple puede ser útil en algunos casos, también puede introducir complejidad y ambigüedad en el diseño de las clases (Ceballos Sierra, 2018).
+        p.mb-4 La herencia simple se refiere a la capacidad de una clase de heredar atributos y métodos de una sola clase base o superclase. En cambio, la herencia múltiple permite que una clase herede de varias clases base simultáneamente. Aunque la herencia múltiple puede ser útil en algunos casos, también puede introducir complejidad y ambigüedad en el diseño de las clases (Ceballos Sierra, 2018).
         .bg-morado.p-4.mb-4(data-aos='fade-up')
           span Por ejemplo, en un sistema de gestión de biblioteca, se podría definir una clase base llamada "Publicacion" con atributos como título, autor y año de publicación. Luego, se podrían crear subclases como "Libro", "Revista" y "Periodico" que hereden de "Publicacion" y añadan atributos y métodos específicos de cada tipo de publicación.
         span Supongamos que la clase "Publicacion" tiene el siguiente aspecto:
